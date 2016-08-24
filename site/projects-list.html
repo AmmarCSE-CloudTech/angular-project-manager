@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Project List</title>
+    <meta name="description" content="Description.">
+    <meta name="keywords" content="Keywords">
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.jpg">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.jpg">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/animate.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/material-design-iconic-font.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/ionicons.min.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css?ver=1.0" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.extend.css" type="text/css" media="all" />
+
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.min.js"></script>
+        <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+<!--     <div id="mask">
+        <div id="loader"></div>
+    </div> -->
+
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="zmdi zmdi-menu"></i>
+                    </button>
+                    <a class="navbar-brand text-hide" href="index.html"><img src="assets/img/logo.png" alt="" />Kadi Inc.</a>
+                    <ul class="nav navbar-nav navbar-right navbar-user">
+                        <li><a class="search-toggle"><img src="assets/img/sprite/icon-search.png" alt=""></a></li>
+                        <li class="dropdown notification-dropdown">
+                            <a><img src="assets/img/sprite/icon-notification.png" alt=""><span class="counter">4</span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="title">Notfications</li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <div class="pull-left"><span class="icon"><img src="assets/img/sprite/icon-new-project.png" alt=""></span><span>New project added</span></div>
+                                    <div class="pull-right"><span class="timestamp">12 mins ago</span></div>
+                                </li>
+                                <li>
+                                    <div class="pull-left"><span class="icon"><img src="assets/img/sprite/icon-new-subphase.png" alt=""></span><span>New subphase added</span></div>
+                                    <div class="pull-right"><span class="timestamp">an hour ago</span></div>
+                                </li>
+                                <li>
+                                    <div class="pull-left"><span class="icon"><img src="assets/img/sprite/icon-new-project.png" alt=""></span><span>New project added</span></div>
+                                    <div class="pull-right"><span class="timestamp">12 mins ago</span></div>
+                                </li>
+                                <li>
+                                    <div class="pull-left"><span class="icon"><img src="assets/img/sprite/icon-new-subphase.png" alt=""></span><span>New subphase added</span></div>
+                                    <div class="pull-right"><span class="timestamp">an hour ago</span></div>
+                                </li>
+                                <li>
+                                    <div class="pull-left"><span class="icon"><img src="assets/img/sprite/icon-new-subphase.png" alt=""></span><span>New subphase added</span></div>
+                                    <div class="pull-right"><span class="timestamp">an hour ago</span></div>
+                                </li>
+                                <li>
+                                    <div class="pull-left"><span class="icon"><img src="assets/img/sprite/icon-new-project.png" alt=""></span><span>New project added</span></div>
+                                    <div class="pull-right"><span class="timestamp">12 mins ago</span></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="avatar has-caret"><img src="assets/img/media/user-profile/avatar1.png" alt="" class="img-circle"></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="">My Profile</a></li>
+                                <li><a href="">My Projects</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">Settings</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-right hide" role="search">
+                        <div class="close-search"></div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="submit"></button>
+                    </form>
+                </div>
+
+                <div class="collapse navbar-collapse" id="header-nav">
+                    <ul class="nav navbar-nav navbar-right navbar-menu">
+                        <li><a href="">Dashboard</a></li>
+                        <li class="active"><a href="">Projects</a></li>
+                        <li><a href="">Calendar</a></li>
+                        <li><a href="">Notifications</a></li>
+                        <li><a href="">Reports</a></li>
+                        <li class="dropdown">
+                            <a href="">Settings <i class="zmdi zmdi-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">System</a></li>
+                                <li><a href="">General</a></li>
+                                <li><a href="">Official Parties</a></li>
+                                <li class="active"><a href="">Notifications</a></li>
+                                <li><a href="">Permission Groups</a></li>
+                                <li><a href="">System Users</a></li>
+                                <li><a href="">Projects</a></li>
+                                <li><a href="">System Logs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="main" class="project-list">
+        <section class="page-heading block">
+            <div class="centered">
+                <h1>Current Projects</h1>
+                <div class="add-project">
+                    <button class="button button-inverse">
+                        <i class="zmdi zmdi-plus-circle"></i> Add Project
+                    </button>
+                </div>
+                <ul class="project-breadcrumb">
+                    <li><a href=""><span class="icon"><img src="assets/img/sprite/icon-home.png" alt=""></span> Home</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+    </div>
+    
+    <footer id="footer">
+        <div class="container">
+            Motabi © 2016. Material on this site may not be reproduced, distributed, transmitted or otherwise used without the prior written consent of  Motabi.
+        </div>
+    </footer>
+
+    <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+
+    <!--[if lt IE 9]>  
+        <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js?ver=1"></script>
+    <![endif]-->  
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+        <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js?ver=1"></script>
+    <!--<![endif]-->  
+
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+</body>
+</html>
