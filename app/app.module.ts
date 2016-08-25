@@ -15,6 +15,8 @@ import { AppComponent }   from './app.component';
 //import './rxjs-extensions';
 
 import { MenuBarComponent }      from './menu-bar/menu-bar.component';
+import { MenuWidgetsComponent }      from './menu-bar/menu-widgets/menu-widgets.component';
+import { MenuNavComponent }      from './menu-bar/menu-nav/menu-nav.component';
 
 @NgModule({
   imports: [
@@ -25,7 +27,9 @@ import { MenuBarComponent }      from './menu-bar/menu-bar.component';
   ],
   declarations: [
     AppComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    MenuWidgetsComponent,
+    MenuNavComponent
   ],
   providers: [
     //{ provide: XHRBackend, useClass: InMemoryBackendService }, // in-mem server

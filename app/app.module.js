@@ -19,6 +19,8 @@ var app_component_1 = require('./app.component');
 //import { routing }        from './app.routing';
 //import './rxjs-extensions';
 var menu_bar_component_1 = require('./menu-bar/menu-bar.component');
+var menu_widgets_component_1 = require('./menu-bar/menu-widgets/menu-widgets.component');
+var menu_nav_component_1 = require('./menu-bar/menu-nav/menu-nav.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -30,7 +32,9 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                menu_bar_component_1.MenuBarComponent
+                menu_bar_component_1.MenuBarComponent,
+                menu_widgets_component_1.MenuWidgetsComponent,
+                menu_nav_component_1.MenuNavComponent
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
