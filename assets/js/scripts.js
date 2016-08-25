@@ -4,7 +4,7 @@
   	window.app 			 				= {el : {}, fn : {}};
 	app.el['window']     				= $(window);
 	app.el['document']   				= $(document);
-	app.el['back-to-top'] 				= $('.back-to-top');
+	//app.el['back-to-top'] 				= $('.back-to-top');
 	app.el['html-body'] 				= $('html,body');
 	app.el['animated']   				= $('.animated');
 	app.el['loader']        			= $('#loader');
@@ -77,14 +77,14 @@
 			}, 150);			
 		});
 	    
-		// fade in .back-to-top
+		/*// fade in .back-to-top
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 500) {
 				app.el['back-to-top'].fadeIn();
 			} else {
 				app.el['back-to-top'].fadeOut();
 			}
-		});
+		});*/
 
 		// favourite star
 		$('.favourite').on('click', function(){
@@ -97,13 +97,13 @@
 			}
 		})
 
-		// scroll body to 0px on click
+		/*// scroll body to 0px on click
 		app.el['back-to-top'].click(function () {
 			app.el['html-body'].animate({
 				scrollTop: 0
 			}, 1500);
 			return false;
-		});
+		});*/
 
 		// Elements animation
 		app.el['animated'].appear(function() {

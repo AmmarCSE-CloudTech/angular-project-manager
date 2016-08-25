@@ -10,26 +10,35 @@ import { HttpModule }     from '@angular/http';
 //import { InMemoryDataService }               from './in-memory-data.service';
 
 import { AppComponent }   from './app.component';
-//import { routing }        from './app.routing';
+import { routing }        from './app.routing';
 
 //import './rxjs-extensions';
 
 import { MenuBarComponent }      from './menu-bar/menu-bar.component';
 import { MenuWidgetsComponent }      from './menu-bar/menu-widgets/menu-widgets.component';
 import { MenuNavComponent }      from './menu-bar/menu-nav/menu-nav.component';
+import { DashboardComponent }      from './dashboard/dashboard.component';
+import { ProjectListComponent }      from './project-list/project-list.component';
+import { NewProjectComponent }      from './new-project/new-project.component';
+import { NewProjectFormComponent }      from './new-project/new-project-form/new-project-form.component';
+import { MapWidgetComponent }      from './new-project/map-widget/map-widget.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    //routing,
+    routing,
     //HttpModule
   ],
   declarations: [
     AppComponent,
     MenuBarComponent,
     MenuWidgetsComponent,
-    MenuNavComponent
+    MenuNavComponent,
+    ProjectListComponent,
+    NewProjectComponent,
+    NewProjectFormComponent,
+    MapWidgetComponent
   ],
   providers: [
     //{ provide: XHRBackend, useClass: InMemoryBackendService }, // in-mem server

@@ -8,7 +8,18 @@
     'app':                        'app', // 'dist',
     '@angular':                   'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
-    'rxjs':                       'node_modules/rxjs'
+    'rxjs':                       'node_modules/rxjs',
+    'jquery':                       'assets/js/jquery-2.1.4.min.js?ver=1',
+    'bootstrap': "assets/js/bootstrap.min.js",
+    'toastr': "assets/js/toastr.min.js",
+    'jquery.appear': "assets/js/jquery.appear.js",
+    'jquery.sticky': "assets/js/jquery.sticky.js",
+    'jquery.nav': "assets/js/jquery.nav.js",
+    'jquery.matchHeight': "assets/js/jquery.matchHeight.min.js",
+    'highcharts': "assets/js/highcharts.js",
+    'icheck': "assets/js/icheck.min.js",
+    'moment': "assets/js/moment.min.js",
+    'fullcalendar': "assets/js/fullcalendar.min.js"
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {

@@ -16,11 +16,15 @@ var forms_1 = require('@angular/forms');
 //import { InMemoryBackendService, SEED_DATA } from 'angular2-in-memory-web-api';
 //import { InMemoryDataService }               from './in-memory-data.service';
 var app_component_1 = require('./app.component');
-//import { routing }        from './app.routing';
+var app_routing_1 = require('./app.routing');
 //import './rxjs-extensions';
 var menu_bar_component_1 = require('./menu-bar/menu-bar.component');
 var menu_widgets_component_1 = require('./menu-bar/menu-widgets/menu-widgets.component');
 var menu_nav_component_1 = require('./menu-bar/menu-nav/menu-nav.component');
+var project_list_component_1 = require('./project-list/project-list.component');
+var new_project_component_1 = require('./new-project/new-project.component');
+var new_project_form_component_1 = require('./new-project/new-project-form/new-project-form.component');
+var map_widget_component_1 = require('./new-project/map-widget/map-widget.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,12 +33,17 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
+                app_routing_1.routing,
             ],
             declarations: [
                 app_component_1.AppComponent,
                 menu_bar_component_1.MenuBarComponent,
                 menu_widgets_component_1.MenuWidgetsComponent,
-                menu_nav_component_1.MenuNavComponent
+                menu_nav_component_1.MenuNavComponent,
+                project_list_component_1.ProjectListComponent,
+                new_project_component_1.NewProjectComponent,
+                new_project_form_component_1.NewProjectFormComponent,
+                map_widget_component_1.MapWidgetComponent
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]
