@@ -9,21 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-var HeroSearchService = (function () {
-    function HeroSearchService(http) {
-        this.http = http;
+var MenuBarComponent = (function () {
+    function MenuBarComponent() {
     }
-    HeroSearchService.prototype.search = function (term) {
-        return this.http
-            .get("app/heroes/?name=" + term)
-            .map(function (r) { return r.json().data; });
-    };
-    HeroSearchService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], HeroSearchService);
-    return HeroSearchService;
+    MenuBarComponent = __decorate([
+        core_1.Component({
+            selector: 'menu-bar',
+            styleUrls: ['app/menu-bar/menu-bar.component.css'],
+            templateUrl: 'app/menu-bar/menu-bar.component.html'
+        }), 
+        __metadata('design:paramtypes', [])
+    ], MenuBarComponent);
+    return MenuBarComponent;
 }());
-exports.HeroSearchService = HeroSearchService;
-//# sourceMappingURL=hero-search.service.js.map
+exports.MenuBarComponent = MenuBarComponent;
+//# sourceMappingURL=menu-bar.component.js.map
