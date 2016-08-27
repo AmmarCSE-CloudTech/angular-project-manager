@@ -20,6 +20,10 @@ var NewProjectComponent = (function () {
         this.router = router;
         this.projectService = projectService;
         this.project = new project_model_1.Project();
+        //set some defaults
+        this.project.language = 'ar-Sa';
+        this.project.location = 'Jeddah';
+        this.project.status = 'initiated';
     }
     NewProjectComponent.prototype.save = function () {
         var _this = this;

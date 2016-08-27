@@ -11,7 +11,7 @@ var InMemoryDataService = (function () {
                 color: 'ABE5DA',
                 start: '08-15-2016',
                 end: '08-17-2016',
-                cost: '30000 SAR',
+                cost: 30000,
                 location: 'Jeddah',
                 status: 'complete',
                 coordinates: {
@@ -22,11 +22,11 @@ var InMemoryDataService = (function () {
                 id: 2,
                 name: 'test project 2',
                 description: 'lorem upsum yat karsom',
-                language: 'ar-sa',
+                language: 'en-Us',
                 color: 'ABE5DA',
                 start: '08-10-2016',
                 end: '09-20-2016',
-                cost: '450000 SAR',
+                cost: 450000,
                 location: 'Jeddah',
                 status: 'in progress',
                 coordinates: {
@@ -42,7 +42,7 @@ var InMemoryDataService = (function () {
                 color: 'ABE5DA',
                 start: '08-10-2016',
                 end: '10-20-2016',
-                cost: '400 SAR',
+                cost: 400,
                 location: 'Jeddah',
                 status: 'initiated',
                 coordinates: {

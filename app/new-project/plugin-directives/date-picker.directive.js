@@ -16,7 +16,9 @@ var DatePicker = (function () {
             changeMonth: true,
             numberOfMonths: 1,
             onClose: function (selectedDate) {
-                $($(el.nativeElement).attr('date-opposite')).datepicker("option", "minDate", selectedDate);
+                var opposite = $(el.nativeElement).attr('date-opposite');
+                var limit = $(el.nativeElement).attr('date-opposite-limit');
+                $(opposite).datepicker("option", limit, selectedDate);
             }
         });
     }

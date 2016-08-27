@@ -6,7 +6,7 @@ export class Project {
     color: string;
     start: string;
     end: string;
-    cost: string;
+    cost: number;
     location: string;
     status: string;
     status: string;

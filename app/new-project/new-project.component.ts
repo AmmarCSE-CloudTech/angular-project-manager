@@ -16,6 +16,11 @@ import { ProjectService } from '../shared/project.service'
 export class NewProjectComponent {
     constructor( private router: Router, private projectService: ProjectService) {
         this.project = new Project();
+
+        //set some defaults
+        this.project.language = 'ar-Sa';
+        this.project.location = 'Jeddah';
+        this.project.status = 'initiated';
     }
 
     save(): void {
