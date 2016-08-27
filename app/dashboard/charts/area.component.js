@@ -17,7 +17,6 @@ var AreaChartComponent = (function () {
         core_1.Component({
             selector: 'area-chart',
             directives: [highcharts_directive_1.AreaChart],
-            styleUrls: ['app/dashboard/charts/area.component.css'],
             templateUrl: 'app/dashboard/charts/area.component.html'
         }), 
         __metadata('design:paramtypes', [])

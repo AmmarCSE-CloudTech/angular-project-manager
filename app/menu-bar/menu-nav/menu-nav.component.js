@@ -17,7 +17,6 @@ var MenuNavComponent = (function () {
         core_1.Component({
             selector: 'menu-nav',
             directives: [nav_open_directive_1.NavOpen],
-            styleUrls: ['app/menu-bar/menu-nav/menu-nav.component.css'],
             templateUrl: 'app/menu-bar/menu-nav/menu-nav.component.html'
         }), 
         __metadata('design:paramtypes', [])

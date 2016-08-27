@@ -15,7 +15,6 @@ var MapWidgetComponent = (function () {
     MapWidgetComponent = __decorate([
         core_1.Component({
             selector: 'map-widget',
-            styleUrls: ['app/new-project/map-widget/map-widget.component.css'],
             templateUrl: 'app/new-project/map-widget/map-widget.component.html'
         }), 
         __metadata('design:paramtypes', [])

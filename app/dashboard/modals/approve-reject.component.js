@@ -15,7 +15,6 @@ var ApproveRejectModalComponent = (function () {
     ApproveRejectModalComponent = __decorate([
         core_1.Component({
             selector: 'approve-reject-modal',
-            styleUrls: ['app/dashboard/modals/approve-reject.component.css'],
             templateUrl: 'app/dashboard/modals/approve-reject.component.html'
         }), 
         __metadata('design:paramtypes', [])

@@ -17,7 +17,6 @@ var Chart2ChartComponent = (function () {
         core_1.Component({
             selector: 'chart-2-chart',
             directives: [highcharts_directive_1.Chart2Chart],
-            styleUrls: ['app/dashboard/charts/statistics-chart/chart-2.component.css'],
             templateUrl: 'app/dashboard/charts/statistics-chart/chart-2.component.html'
         }), 
         __metadata('design:paramtypes', [])

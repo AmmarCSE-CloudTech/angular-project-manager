@@ -47,7 +47,6 @@ var NewProjectComponent = (function () {
         core_1.Component({
             selector: 'new-project',
             directives: [map_loader_directive_1.MapLoader, color_radio_inputs_directive_1.ColorRadioInputs, date_picker_directive_1.DatePicker],
-            styleUrls: ['app/new-project/new-project.component.css'],
             templateUrl: 'app/new-project/new-project.component.html'
         }), 
         __metadata('design:paramtypes', [router_1.Router, project_service_1.ProjectService])

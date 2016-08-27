@@ -15,7 +15,6 @@ var MenuWidgetsComponent = (function () {
     MenuWidgetsComponent = __decorate([
         core_1.Component({
             selector: 'menu-widgets',
-            styleUrls: ['app/menu-bar/menu-widgets/menu-widgets.component.css'],
             templateUrl: 'app/menu-bar/menu-widgets/menu-widgets.component.html'
         }), 
         __metadata('design:paramtypes', [])

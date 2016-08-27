@@ -15,7 +15,6 @@ var StatisticsChartComponent = (function () {
     StatisticsChartComponent = __decorate([
         core_1.Component({
             selector: 'statistics-chart',
-            styleUrls: ['app/dashboard/charts/statistics-chart/statistics.component.css'],
             templateUrl: 'app/dashboard/charts/statistics-chart/statistics.component.html'
         }), 
         __metadata('design:paramtypes', [])

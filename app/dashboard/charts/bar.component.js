@@ -17,7 +17,6 @@ var BarChartComponent = (function () {
         core_1.Component({
             selector: 'bar-chart',
             directives: [highcharts_directive_1.BarChart],
-            styleUrls: ['app/dashboard/charts/bar.component.css'],
             templateUrl: 'app/dashboard/charts/bar.component.html'
         }), 
         __metadata('design:paramtypes', [])

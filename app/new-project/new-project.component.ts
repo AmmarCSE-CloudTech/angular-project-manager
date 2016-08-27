@@ -9,7 +9,6 @@ import { ProjectService } from '../shared/project.service'
 @Component({
     selector: 'new-project',
     directives: [MapLoader, ColorRadioInputs, DatePicker],
-    styleUrls: ['app/new-project/new-project.component.css'],
     templateUrl: 'app/new-project/new-project.component.html'
 })
 

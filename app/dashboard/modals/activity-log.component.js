@@ -15,7 +15,6 @@ var ActivityLogModalComponent = (function () {
     ActivityLogModalComponent = __decorate([
         core_1.Component({
             selector: 'activity-log-modal',
-            styleUrls: ['app/dashboard/modals/activity-log.component.css'],
             templateUrl: 'app/dashboard/modals/activity-log.component.html'
         }), 
         __metadata('design:paramtypes', [])

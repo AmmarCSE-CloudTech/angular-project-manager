@@ -17,7 +17,6 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'project-manager-app',
             directives: [back_to_top_directive_1.BackToTop],
-            styleUrls: ['app/app.component.css'],
             templateUrl: 'app/app.component.html'
         }), 
         __metadata('design:paramtypes', [])

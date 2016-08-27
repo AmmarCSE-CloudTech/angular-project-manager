@@ -17,7 +17,6 @@ var LineChartComponent = (function () {
         core_1.Component({
             selector: 'line-chart',
             directives: [highcharts_directive_1.LineChart],
-            styleUrls: ['app/dashboard/charts/line.component.css'],
             templateUrl: 'app/dashboard/charts/line.component.html'
         }), 
         __metadata('design:paramtypes', [])

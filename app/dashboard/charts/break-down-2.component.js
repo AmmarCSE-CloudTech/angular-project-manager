@@ -17,7 +17,6 @@ var BreakDown2ChartComponent = (function () {
         core_1.Component({
             selector: 'break-down-2-chart',
             directives: [highcharts_directive_1.BreakDown2Chart],
-            styleUrls: ['app/dashboard/charts/break-down-2.component.css'],
             templateUrl: 'app/dashboard/charts/break-down-2.component.html'
         }), 
         __metadata('design:paramtypes', [])

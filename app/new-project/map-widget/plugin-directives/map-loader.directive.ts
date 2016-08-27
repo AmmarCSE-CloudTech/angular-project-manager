@@ -12,7 +12,6 @@ export class MapLoader {
     }
 
     initMap(mapElement) {
-console.log('hey')
         var mapOptions = {
             zoom: 13,
             center: new google.maps.LatLng(59.32522, 18.07002),

@@ -15,7 +15,6 @@ var SummaryComponent = (function () {
     SummaryComponent = __decorate([
         core_1.Component({
             selector: 'project-summary',
-            styleUrls: ['app/dashboard/summary/summary.component.css'],
             templateUrl: 'app/dashboard/summary/summary.component.html'
         }), 
         __metadata('design:paramtypes', [])

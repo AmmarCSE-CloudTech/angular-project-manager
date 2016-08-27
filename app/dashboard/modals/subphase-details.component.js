@@ -15,7 +15,6 @@ var SubphaseDetailModalComponent = (function () {
     SubphaseDetailModalComponent = __decorate([
         core_1.Component({
             selector: 'subphase-detail-modal',
-            styleUrls: ['app/dashboard/modals/subphase-details.component.css'],
             templateUrl: 'app/dashboard/modals/subphase-details.component.html'
         }), 
         __metadata('design:paramtypes', [])

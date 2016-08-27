@@ -17,7 +17,6 @@ var MenuBarComponent = (function () {
         core_1.Component({
             selector: 'menu-bar',
             directives: [sticky_directive_1.Sticky],
-            styleUrls: ['app/menu-bar/menu-bar.component.css'],
             templateUrl: 'app/menu-bar/menu-bar.component.html'
         }), 
         __metadata('design:paramtypes', [])

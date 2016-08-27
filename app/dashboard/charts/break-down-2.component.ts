@@ -4,7 +4,6 @@ import { BreakDown2Chart } from '../plugin-directives/highcharts.directive'
 @Component({
     selector: 'break-down-2-chart',
     directives: [BreakDown2Chart],
-    styleUrls: ['app/dashboard/charts/break-down-2.component.css'],
     templateUrl: 'app/dashboard/charts/break-down-2.component.html'
 })
 
