@@ -14,6 +14,12 @@ var ProjectListComponent = (function () {
     function ProjectListComponent(projectService) {
         this.projectService = projectService;
         this.addingProject = false;
+        var activeLink = document.querySelector('li.active');
+        activeLink && (activeLink.className = '');
+        var projectListLink = document.getElementById('ProjectsLink');
+        projectListLink.className = 'active';
+        var main = document.getElementById('main');
+        main.className = 'project-list';
     }
     ProjectListComponent.prototype.getProjects = function () {
         var _this = this;

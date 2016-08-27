@@ -15,14 +15,32 @@
         </ul>
     </div>
 </section>
-<h2>Projects</h2>
-<ul>
-  <li *ngFor="let project of projects">
-    <span>
-      <span>{{project.id}}</span> {{project.name}}
-      <span>{{project.language}}</span> 
-    </span>
-  </li>
-</ul>
+<section>
+    <h3 class="project-list-header">Projects</h3>
+    <div class="project-list-container">
+      <div *ngFor="let project of projects">
+        <div>
+          <label>id: </label> {{project.id}}
+          <label>name: </label> {{project.name}}
+          <label>description: </label> {{project.description}}
+        </div>
+        <div>
+          <label>language: </label> {{project.language}}
+          <label>color: </label> {{project.color}}
+          <label>start: </label> {{project.start}}
+          <label>end: </label> {{project.end}}
+        </div>
+        <div>
+          <label>cost: </label> {{project.cost}}
+          <label>location: </label> {{project.location}}
+          <label>status: </label> {{project.status}}
+        </div>
+        <div>
+          <label>latitude: </label> {{project.latitude}}
+          <label>longitude: </label> {{project.longitude}}
+        </div>
+      </div>
+    </div>
+</section>
 
 <div class="error" *ngIf="error">{{error}}</div>

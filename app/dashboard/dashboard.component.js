@@ -11,6 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var DashboardComponent = (function () {
     function DashboardComponent() {
+        var activeLink = document.querySelector('li.active');
+        activeLink && (activeLink.className = '');
+        var dashboardLink = document.getElementById('DashboardLink');
+        dashboardLink.className = 'active';
+        var main = document.getElementById('main');
+        main.className = 'project-home';
     }
     DashboardComponent = __decorate([
         core_1.Component({

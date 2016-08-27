@@ -24,6 +24,10 @@ var NewProjectComponent = (function () {
         this.project.language = 'ar-Sa';
         this.project.location = 'Jeddah';
         this.project.status = 'initiated';
+        var activeLink = document.querySelector('li.active');
+        activeLink && (activeLink.className = '');
+        var main = document.getElementById('main');
+        main.className = 'project-home';
     }
     NewProjectComponent.prototype.save = function () {
         var _this = this;

@@ -21,6 +21,12 @@ export class NewProjectComponent {
         this.project.language = 'ar-Sa';
         this.project.location = 'Jeddah';
         this.project.status = 'initiated';
+
+        var activeLink = document.querySelector('li.active');
+        activeLink && (activeLink.className = '');
+
+        var main = document.getElementById('main');
+        main.className = 'project-home';
     }
 
     save(): void {

@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class DashboardComponent {
+    constructor(){
+        var activeLink = document.querySelector('li.active');
+        activeLink && (activeLink.className = '');
+
+        var dashboardLink = document.getElementById('DashboardLink');
+        dashboardLink.className = 'active';
+
+        var main = document.getElementById('main');
+        main.className = 'project-home';
+    }
 }

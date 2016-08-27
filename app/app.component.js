@@ -9,32 +9,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
 var back_to_top_directive_1 = require('./plugin-directives/back-to-top.directive');
 var AppComponent = (function () {
-    function AppComponent(router) {
-        //yes, this is dirty
-        //ideally, the child would be doing this without the need to subscribe to routing events
-        router.events.subscribe(function (event) {
-            if (event instanceof router_1.NavigationStart) {
-                var activeLink = document.querySelector('li.active');
-                activeLink.className = '';
-                var main = document.getElementById('main');
-                if (event.url == '/project-list') {
-                    main.className = 'project-list';
-                    var projectsLink = document.getElementById('ProjectsLink');
-                    projectsLink.className = 'active';
-                }
-                else {
-                    if (event.url == '/dashboard') {
-                        main.className = 'project-list';
-                        var dashboardLink = document.getElementById('DashboardLink');
-                        dashboardLink.className = 'active';
-                    }
-                    main.className = 'project-home';
-                }
-            }
-        });
+    function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
@@ -43,7 +20,7 @@ var AppComponent = (function () {
             styleUrls: ['app/app.component.css'],
             templateUrl: 'app/app.component.html'
         }), 
-        __metadata('design:paramtypes', [router_1.Router])
+        __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());

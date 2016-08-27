@@ -14,10 +14,9 @@ var InMemoryDataService = (function () {
                 cost: 30000,
                 location: 'Jeddah',
                 status: 'complete',
-                coordinates: {
-                    latitude: 40.12345,
-                    longitude: 40.12345
-                }, },
+                latitude: 40.12345,
+                longitude: 40.12345
+            },
             {
                 id: 2,
                 name: 'test project 2',
@@ -29,10 +28,8 @@ var InMemoryDataService = (function () {
                 cost: 450000,
                 location: 'Jeddah',
                 status: 'in progress',
-                coordinates: {
-                    latitude: 40.12345,
-                    longitude: 40.12345
-                }
+                latitude: 40.12345,
+                longitude: 40.12345
             },
             {
                 id: 3,
@@ -45,10 +42,8 @@ var InMemoryDataService = (function () {
                 cost: 400,
                 location: 'Jeddah',
                 status: 'initiated',
-                coordinates: {
-                    latitude: 40.12345,
-                    longitude: 40.12345
-                }
+                latitude: 40.12345,
+                longitude: 40.12345
             }
         ];
         return {
