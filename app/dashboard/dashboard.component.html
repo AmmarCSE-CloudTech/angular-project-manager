@@ -1,179 +1,177 @@
-<div id="main" class="project-home">
-    <section class="page-heading block home-1-heading">
-        <div class="centered">
-            <h1>Motabi Dashboard</h1>
-            <div class="add-project">
-                <a class="button button-inverse" routerLink="/new-project" routerLinkActive="active">
-                    Add Project
-                    <i class="zmdi zmdi-plus-circle"></i> 
-                </a>
-                <!--<button class="button button-inverse" routerlink="/new-project" routerLinkActive="active">
-                    <i class="zmdi zmdi-plus-circle"></i> Add Project
-                </button>-->
-            </div>
-            <div class="project-summary row home-1">
-                <div class="item-summary col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-3 header-icon">
-                            <img src="assets/img/assets.extend/light-bulb.png" alt="Light bulb icon">
-                        </div>
-                        <div class="col-sm-9 text-left">
-                            <div class="big">36</div>
-                            <div class="small">Current Projects</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-summary col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-3 header-icon">
-                            <img src="assets/img/assets.extend/money-icon.png" alt="Light bulb icon">
-                        </div>
-                        <div class="col-sm-9 text-left">
-                            <div class="big">$22.6M</div>
-                            <div class="small">Money spent on lunches</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-summary col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-3 header-icon">
-                            <img src="assets/img/assets.extend/esomething-else-icon.png" alt="Something else">
-                        </div>
-                        <div class="col-sm-9 text-left">
-                            <div class="big">14.67%</div>
-                            <div class="small">Something Else</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+<section class="page-heading block home-1-heading">
+    <div class="centered">
+        <h1>Motabi Dashboard</h1>
+        <div class="add-project">
+            <a class="button button-inverse" routerLink="/new-project" routerLinkActive="active">
+                Add Project
+                <i class="zmdi zmdi-plus-circle"></i> 
+            </a>
+            <!--<button class="button button-inverse" routerlink="/new-project" routerLinkActive="active">
+                <i class="zmdi zmdi-plus-circle"></i> Add Project
+            </button>-->
         </div>
-    </section>
+        <div class="project-summary row home-1">
+            <div class="item-summary col-sm-4">
+                <div class="row">
+                    <div class="col-sm-3 header-icon">
+                        <img src="assets/img/assets.extend/light-bulb.png" alt="Light bulb icon">
+                    </div>
+                    <div class="col-sm-9 text-left">
+                        <div class="big">36</div>
+                        <div class="small">Current Projects</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-summary col-sm-4">
+                <div class="row">
+                    <div class="col-sm-3 header-icon">
+                        <img src="assets/img/assets.extend/money-icon.png" alt="Light bulb icon">
+                    </div>
+                    <div class="col-sm-9 text-left">
+                        <div class="big">$22.6M</div>
+                        <div class="small">Money spent on lunches</div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-summary col-sm-4">
+                <div class="row">
+                    <div class="col-sm-3 header-icon">
+                        <img src="assets/img/assets.extend/esomething-else-icon.png" alt="Something else">
+                    </div>
+                    <div class="col-sm-9 text-left">
+                        <div class="big">14.67%</div>
+                        <div class="small">Something Else</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section id="charts">
-        <div class="container-fluid text-left">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="chart-widget">
-                        <div class="chart-widget-header">Projects</div>
-                        <div class="chart-widget-content">
-                            <div class="chart-container">
-                                <div id="bar1" bar-chart></div>
-                            </div>
+    </div>
+</section>
+
+<section id="charts">
+    <div class="container-fluid text-left">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="chart-widget">
+                    <div class="chart-widget-header">Projects</div>
+                    <div class="chart-widget-content">
+                        <div class="chart-container">
+                            <div id="bar1" bar-chart></div>
                         </div>
                     </div>
-                    <div class="chart-widget">
-                        <div class="chart-widget-header">Breakdown</div>
-                        <div class="clearfix">
-                            <div class="col-md-8">
-                                <div id="breakdown" break-down-chart></div>
-                            </div>
-                            <div class="col-md-4">
-                                <ul class="legend" id="breakdown-legend">
-                                    <li><span style="background-color: #FF9188"></span> Item <strong>16%</strong></li>
-                                    <li><span style="background-color: #AFE5DA"></span> Item <strong>44%</strong></li>
-                                    <li><span style="background-color: #C5B2E9"></span> Item <strong>22%</strong></li>
-                                    <li><span style="background-color: #97C1DA"></span> Item <strong>18%</strong></li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="chart-widget">
+                    <div class="chart-widget-header">Breakdown</div>
+                    <div class="clearfix">
+                        <div class="col-md-8">
+                            <div id="breakdown" break-down-chart></div>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="legend" id="breakdown-legend">
+                                <li><span style="background-color: #FF9188"></span> Item <strong>16%</strong></li>
+                                <li><span style="background-color: #AFE5DA"></span> Item <strong>44%</strong></li>
+                                <li><span style="background-color: #C5B2E9"></span> Item <strong>22%</strong></li>
+                                <li><span style="background-color: #97C1DA"></span> Item <strong>18%</strong></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="chart-widget">
-                        <div class="chart-widget-header">Breakdown</div>
-                        <div class="clearfix">
-                            <div class="col-md-8">
-                                <div id="breakdown2" break-down-2-chart></div>
+                </div>
+                <div class="chart-widget">
+                    <div class="chart-widget-header">Breakdown</div>
+                    <div class="clearfix">
+                        <div class="col-md-8">
+                            <div id="breakdown2" break-down-2-chart></div>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="legend" id="breakdown-legend2">
+                                <li><span style="background-color: #FF9188"></span> Item <strong>16%</strong></li>
+                                <li><span style="background-color: #AFE5DA"></span> Item <strong>44%</strong></li>
+                                <li><span style="background-color: #C5B2E9"></span> Item <strong>22%</strong></li>
+                                <li><span style="background-color: #97C1DA"></span> Item <strong>18%</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="chart-widget">
+                    <div class="chart-widget-header">Statistics</div>
+                    <div class="chart-widget-content">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="infobox">
+                                    <p>
+                                        Average complete
+                                    </p>
+                                    <h2>2.565</h2>
+                                </div>
+                                <div class="infobox">
+                                    <p>
+                                        Average complete
+                                    </p>
+                                    <h2>234</h2>
+                                </div>
+                                <div class="infobox last">
+                                    <p>
+                                        Average complete
+                                    </p>
+                                    <h2>19%</h2>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <ul class="legend" id="breakdown-legend2">
-                                    <li><span style="background-color: #FF9188"></span> Item <strong>16%</strong></li>
-                                    <li><span style="background-color: #AFE5DA"></span> Item <strong>44%</strong></li>
-                                    <li><span style="background-color: #C5B2E9"></span> Item <strong>22%</strong></li>
-                                    <li><span style="background-color: #97C1DA"></span> Item <strong>18%</strong></li>
-                                </ul>
+                            <div class="col-sm-3 no-padding">
+                                <div class="chart-container">
+                                    <div id="chart1" chart-chart class="the-cart"></div>
+                                    <div id="chart1-main-title" class="chart-main-title">Average Complete</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 no-padding">
+                                <div class="chart-container">
+                                    <div id="chart2" chart-2-chart class="the-cart"></div>
+                                    <div id="chart2-main-title" class="chart-main-title">Average Complete</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 no-padding">
+                                <div class="chart-container">
+                                    <div id="chart3" chart-3-chart class="the-cart"></div>
+                                    <div id="chart3-main-title" class="chart-main-title">Average Complete</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="chart-widget">
-                        <div class="chart-widget-header">Statistics</div>
-                        <div class="chart-widget-content">
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <div class="infobox">
-                                        <p>
-                                            Average complete
-                                        </p>
-                                        <h2>2.565</h2>
-                                    </div>
-                                    <div class="infobox">
-                                        <p>
-                                            Average complete
-                                        </p>
-                                        <h2>234</h2>
-                                    </div>
-                                    <div class="infobox last">
-                                        <p>
-                                            Average complete
-                                        </p>
-                                        <h2>19%</h2>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 no-padding">
-                                    <div class="chart-container">
-                                        <div id="chart1" chart-chart class="the-cart"></div>
-                                        <div id="chart1-main-title" class="chart-main-title">Average Complete</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 no-padding">
-                                    <div class="chart-container">
-                                        <div id="chart2" chart-2-chart class="the-cart"></div>
-                                        <div id="chart2-main-title" class="chart-main-title">Average Complete</div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 no-padding">
-                                    <div class="chart-container">
-                                        <div id="chart3" chart-3-chart class="the-cart"></div>
-                                        <div id="chart3-main-title" class="chart-main-title">Average Complete</div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="chart-widget">
+                    <div class="chart-widget-header">
+                        BBQ Pointer
+                        <ul class="legend inline" id="bbq-pointer">
+                            <li><span style="background-color: #BFEBE2"></span> Chart line 1</li>
+                            <li><span style="background-color: #A5C8DE"></span> Chart line 2</li>
+                        </ul>
+                    </div>
+                    <div class="chart-widget-content">
+                        <div class="chart-container">
+                            <div id="line1" line-chart class="the-cart"></div>
                         </div>
                     </div>
-                    <div class="chart-widget">
-                        <div class="chart-widget-header">
-                            BBQ Pointer
-                            <ul class="legend inline" id="bbq-pointer">
-                                <li><span style="background-color: #BFEBE2"></span> Chart line 1</li>
-                                <li><span style="background-color: #A5C8DE"></span> Chart line 2</li>
-                            </ul>
-                        </div>
-                        <div class="chart-widget-content">
-                            <div class="chart-container">
-                                <div id="line1" line-chart class="the-cart"></div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="chart-widget">
-                        <div class="chart-widget-header">
-                            Another Style
-                            <ul class="legend inline" id="bbq-pointer2">
-                                <li><span style="background-color: #BFEBE2"></span> Chart line 1</li>
-                            </ul>
-                        </div>
-                        <div class="chart-widget-content">
-                            <div class="chart-container">
-                                <div id="area1" area-chart class="the-cart"></div>
-                            </div>
+                <div class="chart-widget">
+                    <div class="chart-widget-header">
+                        Another Style
+                        <ul class="legend inline" id="bbq-pointer2">
+                            <li><span style="background-color: #BFEBE2"></span> Chart line 1</li>
+                        </ul>
+                    </div>
+                    <div class="chart-widget-content">
+                        <div class="chart-container">
+                            <div id="area1" area-chart class="the-cart"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
 <div class="modals">
     <div class="container">

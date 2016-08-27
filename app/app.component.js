@@ -9,18 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var back_to_top_directive_1 = require('./plugin-directives/back-to-top.directive');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        //yes, this is dirty
+        //ideally, the child would be doing this without the need to subscribe to routing events
+        router.events.subscribe(function (event) {
+            if (event instanceof router_1.NavigationStart) {
+                var main = document.getElementById('main');
+                if (event.url == '/project-list') {
+                    main.className = 'project-list';
+                }
+                else {
+                    main.className = 'project-home';
+                }
+            }
+        });
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'project-manager-app',
             directives: [back_to_top_directive_1.BackToTop],
             styleUrls: ['app/app.component.css'],
-            template: "\n        <menu-bar></menu-bar>\n        <router-outlet></router-outlet>\n        <footer id=\"footer\">\n            <div class=\"container\">\n                Motabi \u00A9 2016. Material on this site may not be reproduced, distributed, transmitted or otherwise used without the prior written consent of  Motabi.\n            </div>\n        </footer>\n        <div class=\"back-to-top\" back-to-top><i class=\"fa fa-angle-up fa-3x\"></i></div>\n    ",
+            templateUrl: 'app/app.component.html'
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], AppComponent);
     return AppComponent;
 }());

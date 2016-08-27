@@ -1,124 +1,122 @@
-<div id="main" class="project-home">
-    <section class="page-heading block">
-        <div class="centered">
-            <h1><i class="fa fa-plus-circle"></i> New Project</h1>
+<section class="page-heading block">
+    <div class="centered">
+        <h1><i class="fa fa-plus-circle"></i> New Project</h1>
 
-            <ul class="project-breadcrumb">
-                <li><a href=""><span class="icon"><img src="assets/img/sprite/icon-home.png" alt=""></span> Home</a></li>
-                <li><a href="">New Project</a></li>
-            </ul>
-        </div>
-    </section>
+        <ul class="project-breadcrumb">
+            <li><a href=""><span class="icon"><img src="assets/img/sprite/icon-home.png" alt=""></span> Home</a></li>
+            <li><a href="">New Project</a></li>
+        </ul>
+    </div>
+</section>
 
-    <section class="page-content" style="background: #F7F7F7; padding-bottom: 80px">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8" style="margin-bottom: 50px">
-                    <div class="horizontal" id="setting-form">
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project Name</label>
-                            <div class="col-sm-9">
-                                <input class="form-control" placeholder="Project name" [(ngModel)]="project.name">
-                            </div>
+<section class="page-content" style="background: #F7F7F7; padding-bottom: 80px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8" style="margin-bottom: 50px">
+                <div class="horizontal" id="setting-form">
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project Name</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" placeholder="Project name" [(ngModel)]="project.name">
                         </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project Description</label>
-                            <div class="col-sm-9">
-                                <textarea class="form-control" placeholder="Project description" [(ngModel)]="project.description"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">System Language</label>
-                            <div class="col-sm-7">
-                                <select class="form-control" [(ngModel)]="project.language">
-                                    <option>Please select</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-2 text-left">
-                                <button id="add-type">
-                                    <i class="fa fa-plus-circle"></i> Add type
-                                </button>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label check-label">Project color</label>
-                            <div class="col-sm-9">
-                                <div class="project-color-radio text-left">
-                                    <input color-radio-inputs type="radio" name="project-color" value="94C1DC" class="v_94C1DC" [(ngModel)]="project.color">
-                                    <input color-radio-inputs type="radio" name="project-color" value="ABE5DA" class="v_ABE5DA" [(ngModel)]="project.color">
-                                    <input color-radio-inputs type="radio" name="project-color" value="FF8F84" class="v_FF8F84" [(ngModel)]="project.color">
-                                    <input color-radio-inputs type="radio" name="project-color" value="7E8795" class="v_7E8795" [(ngModel)]="project.color">
-                                    <input color-radio-inputs type="radio" name="project-color" value="BDA6F2" class="v_BDA6F2" [(ngModel)]="project.color">
-                                    <input color-radio-inputs type="radio" name="project-color" value="FD8B74" class="v_FD8B74 checked" checked [(ngModel)]="project.color">
-                                    <input color-radio-inputs type="radio" name="project-color" value="B3DD87" class="v_B3DD87" [(ngModel)]="project.color">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project dates</label>
-                            <div class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-sm-6 grouped-form xs-margin-bottom-15">
-                                        <input date-picker date-opposite="#end-date" class="form-control" id="start-date" placeholder="Start date" [(ngModel)]="project.start">
-                                        <span id="start-date-btn" class="transparent-btn"><i class="fa fa-calendar"></i></span>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input date-picker date-opposite="#start-date" class="form-control" id="end-date" placeholder="End date"  [(ngModel)]="project.end">
-                                        <span id="end-date-btn" class="transparent-btn"><i class="fa fa-calendar"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project Cost</label>
-                            <div class="col-sm-9">
-                                <input class="form-control" placeholder="Project Cost"  [(ngModel)]="project.cost">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project Location</label>
-                            <div class="col-sm-9">
-                                <select class="form-control" [(ngModel)]="project.location">
-                                    <option>Please select</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project Status</label>
-                            <div class="col-sm-9">
-                                <select class="form-control" [(ngModel)]="project.status">
-                                    <option>Please select</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label class="col-sm-3 control-label">Project coordinates</label>
-                            <div class="col-sm-9">
-                                <div class="row">
-                                    <div class="col-sm-6 grouped-form xs-margin-bottom-15">
-                                        <input class="form-control" placeholder="Latitude"  [(ngModel)]="project.latitude">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input class="form-control" placeholder="Longitude"  [(ngModel)]="project.longitude">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row" style="margin-top: 3px">
-                            <div class="col-sm-12">
-                                <button class="pull-right button button-main" (click)="save()"><i class="fa fa-plus-circle"></i> Add project</button>
-                            </div>
-                        </div>
-
                     </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project Description</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" placeholder="Project description" [(ngModel)]="project.description"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">System Language</label>
+                        <div class="col-sm-7">
+                            <select class="form-control" [(ngModel)]="project.language">
+                                <option>Please select</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 text-left">
+                            <button id="add-type">
+                                <i class="fa fa-plus-circle"></i> Add type
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label check-label">Project color</label>
+                        <div class="col-sm-9">
+                            <div class="project-color-radio text-left">
+                                <input color-radio-inputs type="radio" name="project-color" value="94C1DC" class="v_94C1DC" [(ngModel)]="project.color">
+                                <input color-radio-inputs type="radio" name="project-color" value="ABE5DA" class="v_ABE5DA" [(ngModel)]="project.color">
+                                <input color-radio-inputs type="radio" name="project-color" value="FF8F84" class="v_FF8F84" [(ngModel)]="project.color">
+                                <input color-radio-inputs type="radio" name="project-color" value="7E8795" class="v_7E8795" [(ngModel)]="project.color">
+                                <input color-radio-inputs type="radio" name="project-color" value="BDA6F2" class="v_BDA6F2" [(ngModel)]="project.color">
+                                <input color-radio-inputs type="radio" name="project-color" value="FD8B74" class="v_FD8B74 checked" checked [(ngModel)]="project.color">
+                                <input color-radio-inputs type="radio" name="project-color" value="B3DD87" class="v_B3DD87" [(ngModel)]="project.color">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project dates</label>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-6 grouped-form xs-margin-bottom-15">
+                                    <input date-picker date-opposite="#end-date" class="form-control" id="start-date" placeholder="Start date" [(ngModel)]="project.start">
+                                    <span id="start-date-btn" class="transparent-btn"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input date-picker date-opposite="#start-date" class="form-control" id="end-date" placeholder="End date"  [(ngModel)]="project.end">
+                                    <span id="end-date-btn" class="transparent-btn"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project Cost</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" placeholder="Project Cost"  [(ngModel)]="project.cost">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project Location</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" [(ngModel)]="project.location">
+                                <option>Please select</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project Status</label>
+                        <div class="col-sm-9">
+                            <select class="form-control" [(ngModel)]="project.status">
+                                <option>Please select</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 control-label">Project coordinates</label>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-6 grouped-form xs-margin-bottom-15">
+                                    <input class="form-control" placeholder="Latitude"  [(ngModel)]="project.latitude">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-control" placeholder="Longitude"  [(ngModel)]="project.longitude">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 3px">
+                        <div class="col-sm-12">
+                            <button class="pull-right button button-main" (click)="save()"><i class="fa fa-plus-circle"></i> Add project</button>
+                        </div>
+                    </div>
+
                 </div>
-                <map-widget></map-widget>
             </div>
+            <map-widget></map-widget>
         </div>
-    </section>
-</div>
+    </div>
+</section>

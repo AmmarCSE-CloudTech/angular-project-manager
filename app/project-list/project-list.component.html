@@ -1,27 +1,25 @@
-<div id="main" class="project-list">
-    <section class="page-heading block">
-        <div class="centered">
-            <h1>Current Projects</h1>
-            <div class="add-project">
-                <a class="button button-inverse" routerLink="/new-project" routerLinkActive="active">
-                    Add Project
-                    <i class="zmdi zmdi-plus-circle"></i> 
-                </a>
-            </div>
-            <ul class="project-breadcrumb">
-                <li><a href=""><span class="icon"><img src="assets/img/sprite/icon-home.png" alt=""></span> Home</a></li>
-                <li><a href="">Projects</a></li>
-            </ul>
+<section class="page-heading block">
+    <div class="centered">
+        <h1>Current Projects</h1>
+        <div class="add-project">
+            <a class="button button-inverse" routerLink="/new-project" routerLinkActive="active">
+                Add Project
+                <i class="zmdi zmdi-plus-circle"></i> 
+            </a>
         </div>
-    </section>
-    <h2>Projects</h2>
-    <ul>
-      <li *ngFor="let project of projects">
-        <span>
-          <span>{{project.id}}</span> {{project.name}}
-        </span>
-      </li>
-    </ul>
+        <ul class="project-breadcrumb">
+            <li><a href=""><span class="icon"><img src="assets/img/sprite/icon-home.png" alt=""></span> Home</a></li>
+            <li><a href="">Projects</a></li>
+        </ul>
+    </div>
+</section>
+<h2>Projects</h2>
+<ul>
+  <li *ngFor="let project of projects">
+    <span>
+      <span>{{project.id}}</span> {{project.name}}
+    </span>
+  </li>
+</ul>
 
-    <div class="error" *ngIf="error">{{error}}</div>
-</div>
+<div class="error" *ngIf="error">{{error}}</div>

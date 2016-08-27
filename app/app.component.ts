@@ -1,20 +1,27 @@
 import { Component } from '@angular/core';
+import { Router, NavigationStart } from '@angular/router';
 import { BackToTop }      from './plugin-directives/back-to-top.directive';
 
 @Component({
     selector: 'project-manager-app',
     directives: [BackToTop],
     styleUrls: ['app/app.component.css'],
-    template: `
-        <menu-bar></menu-bar>
-        <router-outlet></router-outlet>
-        <footer id="footer">
-            <div class="container">
-                Motabi © 2016. Material on this site may not be reproduced, distributed, transmitted or otherwise used without the prior written consent of  Motabi.
-            </div>
-        </footer>
-        <div class="back-to-top" back-to-top><i class="fa fa-angle-up fa-3x"></i></div>
-    `,
+    templateUrl: 'app/app.component.html'
 })
 export class AppComponent {
+    constructor(router:Router) {
+        //yes, this is dirty
+        //ideally, the child would be doing this without the need to subscribe to routing events
+        router.events.subscribe((event:Event) => {
+            if(event instanceof NavigationStart) {
+                var main = document.getElementById('main');
+                if(event.url == '/project-list'){
+                    main.className = 'project-list';
+                }
+                else{
+                    main.className = 'project-home';
+                }
+            }
+        });
+    }
 }
