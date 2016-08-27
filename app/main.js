@@ -1,5 +1,4 @@
 "use strict";
-var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 require('jquery');
 require('bootstrap');
 require('toastr');
@@ -12,6 +11,8 @@ require('highcharts');
 require('icheck');
 require('moment');
 require('fullcalendar');
+require('google-maps');
+var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 var app_module_1 = require('./app.module');
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
 //# sourceMappingURL=main.js.map

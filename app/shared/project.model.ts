@@ -9,7 +9,6 @@ export class Project {
     cost: number;
     location: string;
     status: string;
-    status: string;
     latitude: number;
     longitude: number;
 }

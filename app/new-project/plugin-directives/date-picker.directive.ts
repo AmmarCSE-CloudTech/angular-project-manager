@@ -1,3 +1,4 @@
+declare var $: any;
 
 import {Component, Directive, ElementRef} from '@angular/core'
 

@@ -1,5 +1,3 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
 import 'jquery';
 import 'bootstrap';
 import 'toastr';
@@ -12,8 +10,8 @@ import 'highcharts';
 import 'icheck';
 import 'moment';
 import 'fullcalendar';
+import 'google-maps';
 
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
-
-
 platformBrowserDynamic().bootstrapModule(AppModule);

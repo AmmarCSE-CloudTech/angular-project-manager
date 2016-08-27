@@ -14,8 +14,10 @@ import { ProjectService } from '../shared/project.service'
 })
 
 export class NewProjectComponent {
+    project: Project = new Project();
+    error: any;
+
     constructor( private router: Router, private projectService: ProjectService) {
-        this.project = new Project();
 
         //set some defaults
         this.project.language = 'ar-Sa';

@@ -20,7 +20,8 @@
     'highcharts': "assets/js/highcharts.js",
     'icheck': "assets/js/icheck.min.js",
     'moment': "assets/js/moment.min.js",
-    'fullcalendar': "assets/js/fullcalendar.min.js"
+    'fullcalendar': "assets/js/fullcalendar.min.js",
+    'google-maps': "assets/js/google-maps.js"
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
