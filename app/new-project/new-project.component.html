@@ -59,12 +59,10 @@
                         <div class="col-sm-9">
                             <div class="row">
                                 <div class="col-sm-6 grouped-form xs-margin-bottom-15">
-                                    <input date-picker date-opposite="#end-date" date-opposite-limit="minDate" class="form-control" id="start-date" placeholder="Start date" [(ngModel)]="project.start" name="start">
-                                    <span id="start-date-btn" class="transparent-btn"><i class="fa fa-calendar"></i></span>
+                                    <input type="date" date-opposite="#end-date" date-opposite-limit="minDate" class="form-control" id="start-date" placeholder="Start date" [(ngModel)]="project.start" name="start">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input date-picker date-opposite="#start-date" date-opposite-limit="maxDate" class="form-control" id="end-date" placeholder="End date"  [(ngModel)]="project.end" name="end">
-                                    <span id="end-date-btn" class="transparent-btn"><i class="fa fa-calendar"></i></span>
+                                    <input type="date" date-opposite="#start-date" date-opposite-limit="maxDate" class="form-control" id="end-date" placeholder="End date"  [(ngModel)]="project.end" name="end">
                                 </div>
                             </div>
                         </div>
