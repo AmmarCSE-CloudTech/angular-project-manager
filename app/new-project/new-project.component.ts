@@ -30,7 +30,8 @@ export class NewProjectComponent {
     }
 
     save(): void {
-        this.projectService
+        //need better way to check if form is valid other than simply checking for name
+        this.project.name && this.projectService
             .save(this.project)
             .then(project => {
               //this.project = project; 

@@ -20,24 +20,24 @@
     <div class="project-list-container">
       <div *ngFor="let project of projects">
         <div>
-          <label>id: </label> {{project.id}}
-          <label>name: </label> {{project.name}}
-          <label>description: </label> {{project.description}}
+          <label [hidden]="!project.id">id: </label> {{project.id}}
+          <label [hidden]="!project.name">name: </label> {{project.name}}
+          <label [hidden]="!project.description">description: </label> {{project.description}}
         </div>
         <div>
-          <label>language: </label> {{project.language}}
-          <label>color: </label> {{project.color}}
-          <label>start: </label> {{project.start}}
-          <label>end: </label> {{project.end}}
+          <label [hidden]="!project.language">language: </label> {{project.language}}
+          <label [hidden]="!project.color">color: </label> {{project.color}}
+          <label [hidden]="!project.start">start: </label> {{project.start}}
+          <label [hidden]="!project.end">end: </label> {{project.end}}
         </div>
         <div>
-          <label>cost: </label> {{project.cost}}
-          <label>location: </label> {{project.location}}
-          <label>status: </label> {{project.status}}
+          <label [hidden]="!project.cost">cost: </label> {{project.cost}}
+          <label [hidden]="!project.location">location: </label> {{project.location}}
+          <label [hidden]="!project.status">status: </label> {{project.status}}
         </div>
         <div>
-          <label>latitude: </label> {{project.latitude}}
-          <label>longitude: </label> {{project.longitude}}
+          <label [hidden]="!project.latitude">latitude: </label> {{project.latitude}}
+          <label [hidden]="!project.longitude">longitude: </label> {{project.longitude}}
         </div>
       </div>
     </div>
