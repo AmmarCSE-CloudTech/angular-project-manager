@@ -14,6 +14,14 @@
             </ul>
         </div>
     </section>
+    <h2>Projects</h2>
+    <ul>
+      <li *ngFor="let project of projects">
+        <span>
+          <span>{{project.id}}</span> {{project.name}}
+        </span>
+      </li>
+    </ul>
 
-
+    <div class="error" *ngIf="error">{{error}}</div>
 </div>

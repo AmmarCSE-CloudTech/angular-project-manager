@@ -9,12 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var nav_open_directive_1 = require('../plugin-directives/nav-open.directive');
 var MenuNavComponent = (function () {
     function MenuNavComponent() {
     }
     MenuNavComponent = __decorate([
         core_1.Component({
             selector: 'menu-nav',
+            directives: [nav_open_directive_1.NavOpen],
             styleUrls: ['app/menu-bar/menu-nav/menu-nav.component.css'],
             templateUrl: 'app/menu-bar/menu-nav/menu-nav.component.html'
         }), 

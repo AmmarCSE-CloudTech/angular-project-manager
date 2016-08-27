@@ -9,18 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NewProjectFormComponent = (function () {
-    function NewProjectFormComponent() {
+var DatePicker = (function () {
+    function DatePicker(el) {
+        $(el.nativeElement).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1,
+            onClose: function (selectedDate) {
+                $($(el.nativeElement).attr('date-opposite')).datepicker("option", "minDate", selectedDate);
+            }
+        });
     }
-    NewProjectFormComponent = __decorate([
-        core_1.Component({
-            selector: 'new-project-form',
-            styleUrls: ['app/new-project/new-project-form/new-project-form.component.css'],
-            templateUrl: 'app/new-project/new-project-form/new-project-form.component.html'
+    DatePicker = __decorate([
+        core_1.Directive({
+            selector: "[date-picker]"
         }), 
-        __metadata('design:paramtypes', [])
-    ], NewProjectFormComponent);
-    return NewProjectFormComponent;
+        __metadata('design:paramtypes', [core_1.ElementRef])
+    ], DatePicker);
+    return DatePicker;
 }());
-exports.NewProjectFormComponent = NewProjectFormComponent;
-//# sourceMappingURL=new-project-form.component.js.map
+exports.DatePicker = DatePicker;
+//# sourceMappingURL=date-picker.directive.js.map

@@ -10,7 +10,7 @@
 	app.el['loader']        			= $('#loader');
 	app.el['mask']          			= $('#mask');
 	app.el['header']          			= $('header');
-	app.el['navbar-nav'] 				= $('.navbar-nav li.dropdown');
+	//app.el['navbar-nav'] 				= $('.navbar-nav li.dropdown');
 
 	$(function() {	
 	    // Preloader
@@ -26,14 +26,14 @@
 		// fixed header
 		app.el['header'].sticky({ topSpacing: 0 });
 
-		// On hover, open drop down
+		/*// On hover, open drop down
 	    app.el['navbar-nav'].on({
 	        mouseenter: function() {
 	          $(this).addClass('open');
 	        }, mouseleave: function() {
 	          $(this).removeClass('open');
 	        }
-	    });
+	    });*/
 
 	    // One page nav header
 	    // var top_offset = $('#header').height() - 1;

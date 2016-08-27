@@ -3,6 +3,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import 'jquery';
 import 'bootstrap';
 import 'toastr';
+import 'jquery.ui';
 import 'jquery.appear';
 import 'jquery.sticky';
 import 'jquery.nav';

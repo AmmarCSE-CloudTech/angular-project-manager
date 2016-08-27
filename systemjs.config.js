@@ -12,6 +12,7 @@
     'jquery':                       'assets/js/jquery-2.1.4.min.js?ver=1',
     'bootstrap': "assets/js/bootstrap.min.js",
     'toastr': "assets/js/toastr.min.js",
+    'jquery.ui': "assets/js/jquery-ui.min.js",
     'jquery.appear': "assets/js/jquery.appear.js",
     'jquery.sticky': "assets/js/jquery.sticky.js",
     'jquery.nav': "assets/js/jquery.nav.js",

@@ -12,15 +12,15 @@
         $('#password').togglePassword();
     });
 
-    var icheckInput = $('.project-color-radio input');
+    /*var icheckInput = $('.project-color-radio input');
     icheckInput.iCheck({
         checkboxClass: 'icheck_box icheckbox_css',
         radioClass: 'icheck_box iradio_css',
         increaseArea: '20%',
         inheritClass: true
-    });
+    });*/
 
-    if($('#start-date-btn').length){
+    /*if($('#start-date-btn').length){
         $( "#start-date" ).datepicker({
             defaultDate: "+1w",
             changeMonth: true,
@@ -37,7 +37,7 @@
                 $( "#start-date" ).datepicker( "option", "maxDate", selectedDate );
             }
         });
-    }
+    }*/
 
     function fullHeight(){
         if($(window).height()>=$('#login .container').outerHeight()){

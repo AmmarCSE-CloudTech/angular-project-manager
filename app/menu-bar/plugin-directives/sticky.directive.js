@@ -9,20 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var sticky_directive_1 = require('./plugin-directives/sticky.directive');
-var MenuBarComponent = (function () {
-    function MenuBarComponent() {
+var Sticky = (function () {
+    function Sticky(el) {
+        $(el.nativeElement).sticky({ topSpacing: 0 });
+        $(window).resize(function () {
+            $(el.nativeElement).unstick();
+            $(el.nativeElement).sticky({ topSpacing: 0 });
+        });
     }
-    MenuBarComponent = __decorate([
-        core_1.Component({
-            selector: 'menu-bar',
-            directives: [sticky_directive_1.Sticky],
-            styleUrls: ['app/menu-bar/menu-bar.component.css'],
-            templateUrl: 'app/menu-bar/menu-bar.component.html'
+    Sticky = __decorate([
+        core_1.Directive({
+            selector: "[sticky]"
         }), 
-        __metadata('design:paramtypes', [])
-    ], MenuBarComponent);
-    return MenuBarComponent;
+        __metadata('design:paramtypes', [core_1.ElementRef])
+    ], Sticky);
+    return Sticky;
 }());
-exports.MenuBarComponent = MenuBarComponent;
-//# sourceMappingURL=menu-bar.component.js.map
+exports.Sticky = Sticky;
+//# sourceMappingURL=sticky.directive.js.map

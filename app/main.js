@@ -3,6 +3,7 @@ var platform_browser_dynamic_1 = require('@angular/platform-browser-dynamic');
 require('jquery');
 require('bootstrap');
 require('toastr');
+require('jquery.ui');
 require('jquery.appear');
 require('jquery.sticky');
 require('jquery.nav');

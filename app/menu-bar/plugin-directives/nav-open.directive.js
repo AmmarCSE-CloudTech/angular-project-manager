@@ -9,20 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var sticky_directive_1 = require('./plugin-directives/sticky.directive');
-var MenuBarComponent = (function () {
-    function MenuBarComponent() {
+var NavOpen = (function () {
+    function NavOpen(el) {
+        // On hover, open drop down
+        $(el.nativeElement).on({
+            mouseenter: function () {
+                $(this).addClass('open');
+            }, mouseleave: function () {
+                $(this).removeClass('open');
+            }
+        });
     }
-    MenuBarComponent = __decorate([
-        core_1.Component({
-            selector: 'menu-bar',
-            directives: [sticky_directive_1.Sticky],
-            styleUrls: ['app/menu-bar/menu-bar.component.css'],
-            templateUrl: 'app/menu-bar/menu-bar.component.html'
+    NavOpen = __decorate([
+        core_1.Directive({
+            selector: "[nav-open]"
         }), 
-        __metadata('design:paramtypes', [])
-    ], MenuBarComponent);
-    return MenuBarComponent;
+        __metadata('design:paramtypes', [core_1.ElementRef])
+    ], NavOpen);
+    return NavOpen;
 }());
-exports.MenuBarComponent = MenuBarComponent;
-//# sourceMappingURL=menu-bar.component.js.map
+exports.NavOpen = NavOpen;
+//# sourceMappingURL=nav-open.directive.js.map

@@ -9,20 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var sticky_directive_1 = require('./plugin-directives/sticky.directive');
-var MenuBarComponent = (function () {
-    function MenuBarComponent() {
+var ColorRadioInputs = (function () {
+    function ColorRadioInputs(el) {
+        $(el.nativeElement).iCheck({
+            checkboxClass: 'icheck_box icheckbox_css',
+            radioClass: 'icheck_box iradio_css',
+            increaseArea: '20%',
+            inheritClass: true
+        });
     }
-    MenuBarComponent = __decorate([
-        core_1.Component({
-            selector: 'menu-bar',
-            directives: [sticky_directive_1.Sticky],
-            styleUrls: ['app/menu-bar/menu-bar.component.css'],
-            templateUrl: 'app/menu-bar/menu-bar.component.html'
+    ColorRadioInputs = __decorate([
+        core_1.Directive({
+            selector: "[color-radio-inputs]"
         }), 
-        __metadata('design:paramtypes', [])
-    ], MenuBarComponent);
-    return MenuBarComponent;
+        __metadata('design:paramtypes', [core_1.ElementRef])
+    ], ColorRadioInputs);
+    return ColorRadioInputs;
 }());
-exports.MenuBarComponent = MenuBarComponent;
-//# sourceMappingURL=menu-bar.component.js.map
+exports.ColorRadioInputs = ColorRadioInputs;
+//# sourceMappingURL=color-radio-inputs.directive.js.map
