@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var ActivityLogModalComponent = (function () {
+    function ActivityLogModalComponent() {
     }
-    DashboardComponent = __decorate([
+    ActivityLogModalComponent = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            styleUrls: ['app/dashboard/dashboard.component.css'],
-            templateUrl: 'app/dashboard/dashboard.component.html'
+            selector: 'activity-log-modal',
+            styleUrls: ['app/dashboard/modals/activity-log.component.css'],
+            templateUrl: 'app/dashboard/modals/activity-log.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], ActivityLogModalComponent);
+    return ActivityLogModalComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.ActivityLogModalComponent = ActivityLogModalComponent;
+//# sourceMappingURL=activity-log.component.js.map

@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var SubphaseDetailModalComponent = (function () {
+    function SubphaseDetailModalComponent() {
     }
-    DashboardComponent = __decorate([
+    SubphaseDetailModalComponent = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            styleUrls: ['app/dashboard/dashboard.component.css'],
-            templateUrl: 'app/dashboard/dashboard.component.html'
+            selector: 'subphase-detail-modal',
+            styleUrls: ['app/dashboard/modals/subphase-details.component.css'],
+            templateUrl: 'app/dashboard/modals/subphase-details.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], SubphaseDetailModalComponent);
+    return SubphaseDetailModalComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.SubphaseDetailModalComponent = SubphaseDetailModalComponent;
+//# sourceMappingURL=subphase-details.component.js.map

@@ -9,18 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var highcharts_directive_1 = require('../plugin-directives/highcharts.directive');
+var LineChartComponent = (function () {
+    function LineChartComponent() {
     }
-    DashboardComponent = __decorate([
+    LineChartComponent = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            styleUrls: ['app/dashboard/dashboard.component.css'],
-            templateUrl: 'app/dashboard/dashboard.component.html'
+            selector: 'line-chart',
+            directives: [highcharts_directive_1.LineChart],
+            styleUrls: ['app/dashboard/charts/line.component.css'],
+            templateUrl: 'app/dashboard/charts/line.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], LineChartComponent);
+    return LineChartComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.LineChartComponent = LineChartComponent;
+//# sourceMappingURL=line.component.js.map

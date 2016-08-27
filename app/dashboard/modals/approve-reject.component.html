@@ -1,0 +1,40 @@
+<button type="button" class="rounded-button rounded-green" data-toggle="modal" data-target="#modal1">
+    Approve or Reject Modal
+</button>
+<div class="modal fade modal-approve" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1">
+    <div class="modal-dialog" role="document">
+        <form class="form-horizontal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/assets.extend/modal-close-icon.png"></button>
+                    <h4 class="modal-title">Approve or Reject</h4>
+                </div>
+                <div class="modal-body" style="padding-bottom: 0 !important;">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Notes</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="inputEmail3" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="file" class="col-sm-2 control-label">Attachments</label>
+                            <div class="col-md-10">
+                                <input type="file" id="file">
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-sm-4 text-left">
+                            <button type="button" class="rounded-button" data-dismiss="modal">Close</button>
+                        </div>
+                        <div class="col-sm-8 text-left sm-text-right">
+                            <button type="button" class="rounded-button rounded-orange">Reject</button>
+                            <button type="button" class="rounded-button rounded-green">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

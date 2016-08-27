@@ -8,46 +8,8 @@
                     Add Project
                 </span>
             </a>
-            <!--<button class="button button-inverse" routerlink="/new-project" routerLinkActive="active">
-                <i class="zmdi zmdi-plus-circle"></i> Add Project
-            </button>-->
         </div>
-        <div class="project-summary row home-1">
-            <div class="item-summary col-sm-4">
-                <div class="row">
-                    <div class="col-sm-3 header-icon">
-                        <img src="assets/img/assets.extend/light-bulb.png" alt="Light bulb icon">
-                    </div>
-                    <div class="col-sm-9 text-left">
-                        <div class="big">36</div>
-                        <div class="small">Current Projects</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item-summary col-sm-4">
-                <div class="row">
-                    <div class="col-sm-3 header-icon">
-                        <img src="assets/img/assets.extend/money-icon.png" alt="Light bulb icon">
-                    </div>
-                    <div class="col-sm-9 text-left">
-                        <div class="big">$22.6M</div>
-                        <div class="small">Money spent on lunches</div>
-                    </div>
-                </div>
-            </div>
-            <div class="item-summary col-sm-4">
-                <div class="row">
-                    <div class="col-sm-3 header-icon">
-                        <img src="assets/img/assets.extend/esomething-else-icon.png" alt="Something else">
-                    </div>
-                    <div class="col-sm-9 text-left">
-                        <div class="big">14.67%</div>
-                        <div class="small">Something Else</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <project-summary></project-summary>
     </div>
 </section>
 
@@ -55,121 +17,14 @@
     <div class="container-fluid text-left">
         <div class="row">
             <div class="col-md-4">
-                <div class="chart-widget">
-                    <div class="chart-widget-header">Projects</div>
-                    <div class="chart-widget-content">
-                        <div class="chart-container">
-                            <div id="bar1" bar-chart></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="chart-widget">
-                    <div class="chart-widget-header">Breakdown</div>
-                    <div class="clearfix">
-                        <div class="col-md-8">
-                            <div id="breakdown" break-down-chart></div>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="legend" id="breakdown-legend">
-                                <li><span style="background-color: #FF9188"></span> Item <strong>16%</strong></li>
-                                <li><span style="background-color: #AFE5DA"></span> Item <strong>44%</strong></li>
-                                <li><span style="background-color: #C5B2E9"></span> Item <strong>22%</strong></li>
-                                <li><span style="background-color: #97C1DA"></span> Item <strong>18%</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="chart-widget">
-                    <div class="chart-widget-header">Breakdown</div>
-                    <div class="clearfix">
-                        <div class="col-md-8">
-                            <div id="breakdown2" break-down-2-chart></div>
-                        </div>
-                        <div class="col-md-4">
-                            <ul class="legend" id="breakdown-legend2">
-                                <li><span style="background-color: #FF9188"></span> Item <strong>16%</strong></li>
-                                <li><span style="background-color: #AFE5DA"></span> Item <strong>44%</strong></li>
-                                <li><span style="background-color: #C5B2E9"></span> Item <strong>22%</strong></li>
-                                <li><span style="background-color: #97C1DA"></span> Item <strong>18%</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <bar-chart></bar-chart>
+                <break-down-chart></break-down-chart>
+                <break-down-2-chart></break-down-2-chart>
             </div>
             <div class="col-md-8">
-                <div class="chart-widget">
-                    <div class="chart-widget-header">Statistics</div>
-                    <div class="chart-widget-content">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <div class="infobox">
-                                    <p>
-                                        Average complete
-                                    </p>
-                                    <h2>2.565</h2>
-                                </div>
-                                <div class="infobox">
-                                    <p>
-                                        Average complete
-                                    </p>
-                                    <h2>234</h2>
-                                </div>
-                                <div class="infobox last">
-                                    <p>
-                                        Average complete
-                                    </p>
-                                    <h2>19%</h2>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 no-padding">
-                                <div class="chart-container">
-                                    <div id="chart1" chart-chart class="the-cart"></div>
-                                    <div id="chart1-main-title" class="chart-main-title">Average Complete</div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 no-padding">
-                                <div class="chart-container">
-                                    <div id="chart2" chart-2-chart class="the-cart"></div>
-                                    <div id="chart2-main-title" class="chart-main-title">Average Complete</div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 no-padding">
-                                <div class="chart-container">
-                                    <div id="chart3" chart-3-chart class="the-cart"></div>
-                                    <div id="chart3-main-title" class="chart-main-title">Average Complete</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="chart-widget">
-                    <div class="chart-widget-header">
-                        BBQ Pointer
-                        <ul class="legend inline" id="bbq-pointer">
-                            <li><span style="background-color: #BFEBE2"></span> Chart line 1</li>
-                            <li><span style="background-color: #A5C8DE"></span> Chart line 2</li>
-                        </ul>
-                    </div>
-                    <div class="chart-widget-content">
-                        <div class="chart-container">
-                            <div id="line1" line-chart class="the-cart"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="chart-widget">
-                    <div class="chart-widget-header">
-                        Another Style
-                        <ul class="legend inline" id="bbq-pointer2">
-                            <li><span style="background-color: #BFEBE2"></span> Chart line 1</li>
-                        </ul>
-                    </div>
-                    <div class="chart-widget-content">
-                        <div class="chart-container">
-                            <div id="area1" area-chart class="the-cart"></div>
-                        </div>
-                    </div>
-                </div>
+                <statistics-chart></statistics-chart>
+                <line-chart></line-chart>
+                <area-chart></area-chart>
             </div>
         </div>
     </div>
@@ -179,136 +34,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-
-                <button type="button" class="rounded-button rounded-green" data-toggle="modal" data-target="#modal1">
-                    Approve or Reject Modal
-                </button>
-                <div class="modal fade modal-approve" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1">
-                    <div class="modal-dialog" role="document">
-                        <form class="form-horizontal">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/assets.extend/modal-close-icon.png"></button>
-                                    <h4 class="modal-title">Approve or Reject</h4>
-                                </div>
-                                <div class="modal-body" style="padding-bottom: 0 !important;">
-                                        <div class="form-group">
-                                            <label for="inputEmail3" class="col-sm-2 control-label">Notes</label>
-                                            <div class="col-md-10">
-                                                <textarea class="form-control" id="inputEmail3" rows="4"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="file" class="col-sm-2 control-label">Attachments</label>
-                                            <div class="col-md-10">
-                                                <input type="file" id="file">
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="row">
-                                        <div class="col-sm-4 text-left">
-                                            <button type="button" class="rounded-button" data-dismiss="modal">Close</button>
-                                        </div>
-                                        <div class="col-sm-8 text-left sm-text-right">
-                                            <button type="button" class="rounded-button rounded-orange">Reject</button>
-                                            <button type="button" class="rounded-button rounded-green">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <button type="button" class="rounded-button rounded-green" data-toggle="modal" data-target="#modal2">
-                    Activity Log Modal
-                </button>
-                <div class="modal fade modal-activity-log" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal1">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/assets.extend/modal-close-icon.png"></button>
-                                <h4 class="modal-title">Activity Log</h4>
-                            </div>
-                            <div class="modal-body" style="padding-bottom: 0 !important;">
-                                <div class="activity-container">
-                                    <div class="activity-box">
-                                        <img src="assets/img/assets.extend/modal-check-gray.png" class="activity-icon">
-                                        <div class="activity-content">
-                                            Title of completed/assigned/updated task will appear here
-                                        </div>
-                                        <div class="activity-date">
-                                            13/12/16
-                                        </div>
-                                    </div>
-                                    <div class="activity-box">
-                                        <img src="assets/img/assets.extend/modal-check-gray.png" class="activity-icon">
-                                        <div class="activity-content">
-                                            Title of completed/assigned/updated task will appear here
-                                        </div>
-                                        <div class="activity-date">
-                                            13/12/16
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="rounded-button" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="button" class="rounded-button rounded-green" data-toggle="modal" data-target="#modal3">
-                    Subphase details Modal
-                </button>
-                <div class="modal fade modal-activity-log" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal1">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="assets/img/assets.extend/modal-close-icon.png"></button>
-                                <h4 class="modal-title">Subphase details</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="sub-phase-container">
-                                    <div class="sub-phase-box">
-                                        <div class="sub-phase-header">
-                                            <img src="assets/img/assets.extend/modal-check-green.png">
-                                            <h2>STC Saudi Telecom approved the phase</h2>
-                                            <div class="meta">
-                                                <span>13/12/16</span> <span>3:12pm</span>
-                                            </div>
-                                        </div>
-                                        <div class="sub-phase-content">
-                                            Donec iaculis maecenas venenatis interdum quam vestibulum adipiscing consequat quam mi adipiscing ad tortor nisi elementum.Donec iaculis maecenas venenatis interdum quam vestibulum adipiscing.
-                                        </div>
-                                        <div class="sub-phase-attachment">
-                                            <strong>Attachments:</strong> <a href="#">image1.png</a> <a href="#">image2.png</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="sub-phase-box">
-                                        <div class="sub-phase-header">
-                                            <img src="assets/img/assets.extend/modal-check-green.png">
-                                            <h2>STC Saudi Telecom approved the phase</h2>
-                                            <div class="meta">
-                                                <span>13/12/16</span> <span>3:12pm</span>
-                                            </div>
-                                        </div>
-                                        <div class="sub-phase-content">
-                                            Donec iaculis maecenas venenatis interdum quam vestibulum adipiscing consequat quam mi adipiscing ad tortor nisi elementum.Donec iaculis maecenas venenatis interdum quam vestibulum adipiscing.
-                                        </div>
-                                        <div class="sub-phase-attachment">
-                                            <strong>Attachments:</strong> <a href="#">image1.png</a> <a href="#">image2.png</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <approve-reject-modal></approve-reject-modal>
+                <activity-log-modal></activity-log-modal>
+                <subphase-detail-modal></subphase-detail-modal>
             </div>
         </div>
     </div>

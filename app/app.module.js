@@ -22,6 +22,20 @@ require('./shared/rxjs-extensions');
 var menu_bar_component_1 = require('./menu-bar/menu-bar.component');
 var menu_widgets_component_1 = require('./menu-bar/menu-widgets/menu-widgets.component');
 var menu_nav_component_1 = require('./menu-bar/menu-nav/menu-nav.component');
+var dashboard_component_1 = require('./dashboard/dashboard.component');
+var summary_component_1 = require('./dashboard/summary/summary.component');
+var break_down_component_1 = require('./dashboard/charts/break-down.component');
+var break_down_2_component_1 = require('./dashboard/charts/break-down-2.component');
+var area_component_1 = require('./dashboard/charts/area.component');
+var line_component_1 = require('./dashboard/charts/line.component');
+var bar_component_1 = require('./dashboard/charts/bar.component');
+var statistics_component_1 = require('./dashboard/charts/statistics-chart/statistics.component');
+var chart_component_1 = require('./dashboard/charts/statistics-chart/chart.component');
+var chart_2_component_1 = require('./dashboard/charts/statistics-chart/chart-2.component');
+var chart_3_component_1 = require('./dashboard/charts/statistics-chart/chart-3.component');
+var approve_reject_component_1 = require('./dashboard/modals/approve-reject.component');
+var activity_log_component_1 = require('./dashboard/modals/activity-log.component');
+var subphase_details_component_1 = require('./dashboard/modals/subphase-details.component');
 var project_list_component_1 = require('./project-list/project-list.component');
 var new_project_component_1 = require('./new-project/new-project.component');
 var map_widget_component_1 = require('./new-project/map-widget/map-widget.component');
@@ -42,6 +56,20 @@ var AppModule = (function () {
                 menu_bar_component_1.MenuBarComponent,
                 menu_widgets_component_1.MenuWidgetsComponent,
                 menu_nav_component_1.MenuNavComponent,
+                dashboard_component_1.DashboardComponent,
+                summary_component_1.SummaryComponent,
+                break_down_component_1.BreakDownChartComponent,
+                break_down_2_component_1.BreakDown2ChartComponent,
+                area_component_1.AreaChartComponent,
+                line_component_1.LineChartComponent,
+                bar_component_1.BarChartComponent,
+                statistics_component_1.StatisticsChartComponent,
+                chart_component_1.ChartChartComponent,
+                chart_2_component_1.Chart2ChartComponent,
+                chart_3_component_1.Chart3ChartComponent,
+                approve_reject_component_1.ApproveRejectModalComponent,
+                activity_log_component_1.ActivityLogModalComponent,
+                subphase_details_component_1.SubphaseDetailModalComponent,
                 project_list_component_1.ProjectListComponent,
                 new_project_component_1.NewProjectComponent,
                 map_widget_component_1.MapWidgetComponent

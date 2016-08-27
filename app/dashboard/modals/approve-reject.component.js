@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var ApproveRejectModalComponent = (function () {
+    function ApproveRejectModalComponent() {
     }
-    DashboardComponent = __decorate([
+    ApproveRejectModalComponent = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            styleUrls: ['app/dashboard/dashboard.component.css'],
-            templateUrl: 'app/dashboard/dashboard.component.html'
+            selector: 'approve-reject-modal',
+            styleUrls: ['app/dashboard/modals/approve-reject.component.css'],
+            templateUrl: 'app/dashboard/modals/approve-reject.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], ApproveRejectModalComponent);
+    return ApproveRejectModalComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.ApproveRejectModalComponent = ApproveRejectModalComponent;
+//# sourceMappingURL=approve-reject.component.js.map

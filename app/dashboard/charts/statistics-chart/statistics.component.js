@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var DashboardComponent = (function () {
-    function DashboardComponent() {
+var StatisticsChartComponent = (function () {
+    function StatisticsChartComponent() {
     }
-    DashboardComponent = __decorate([
+    StatisticsChartComponent = __decorate([
         core_1.Component({
-            selector: 'dashboard',
-            styleUrls: ['app/dashboard/dashboard.component.css'],
-            templateUrl: 'app/dashboard/dashboard.component.html'
+            selector: 'statistics-chart',
+            styleUrls: ['app/dashboard/charts/statistics-chart/statistics.component.css'],
+            templateUrl: 'app/dashboard/charts/statistics-chart/statistics.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ], StatisticsChartComponent);
+    return StatisticsChartComponent;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.StatisticsChartComponent = StatisticsChartComponent;
+//# sourceMappingURL=statistics.component.js.map
